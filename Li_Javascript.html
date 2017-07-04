@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<body>
+
+
+
+<div id="myId"></div>
+
+
+
+</body>
+
+
+<script type="text/javascript">
+
+var myArr= ['Anil','Nilesh','Deepak','Avneet'];
+
+var concat="";
+
+for(var i=0;i<myArr.length;i++){
+
+   var str= '<li onClick="myname(\''+ i+'\')">'+myArr[i]+'</li>';
+
+   concat = concat+str;
+
+}
+
+
+  document.getElementById("myId").innerHTML="<ul>"+concat+"</ul>";
+
+
+function myname(k){
+
+	alert(myArr[k])
+}
+
+
+
+</script>
+</html>
